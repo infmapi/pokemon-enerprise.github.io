@@ -31,7 +31,6 @@
             object-fit: cover;
             transition: box-shadow 0.3s, filter 0.3s, border 0.3s; /* Added transition for the border */
         }
-        
 
         .image-container:hover img {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -62,35 +61,56 @@
             left: 50%;
             transform: translateX(-50%);
         }
+
+        /* Style for the container holding download links */
+        .download-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Style for download link text */
+        .download-text {
+            margin-top: 10px;
+        }
+
+        /* Style for the container holding Pokémon images */
+        .pokemon-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
     <div>
-    <h1 class="fancy-title">Pokemon</h1>
-</div>
-    <div>
-    <h3>Dowload the files by clicking on the image and inserting it in the emulator</h3>
-</div>
-    <div>
+        <h1 class="fancy-title">Pokemon</h1>
+    </div>
+    <div class="download-container">
+        <h3>Load the  dowloaded files in emulator:</h3>
         <div class="image-container">
-        <a href="artclass/emulator.html" > 
-            <img src="emulator.jpg" alt="Pokemon Ruby" style="width: 130px; height: 130px;" />>
-        </a>
+            <a href="artclass/emulator.html"> 
+                <img src="emulator.jpg" alt="Emulator Logo">
+            </a>
+        </div>
     </div>
-    <div class="image-container">
-        <a href="retrogames\Binaries/pokemonemerald.gba" download> <!-- Download "pokemonemerald.gba" when clicked -->
-            <img src="pokemonemerlad.png" alt="Pokemon Emerald">
-        </a>
-    </div>
-    <div class="image-container">
-        <a href="retrogames\Binaries/pokemonruby.gba" download> <!-- Download "pokemonruby.gba" when clicked -->
-            <img src="pokemon ruby.png" alt="Pokemon Ruby">
-        </a>
-    </div>
-    </div>
-    
     <div>
-        <h3>Dowload the files only once then use the save button in the emulator to save progress anywhere</h3>
+        <h3>Download the Pokémon files:</h3>
+        <div class="pokemon-images">
+            <div class="image-container">
+                <a href="retrogames/Binaries/pokemonemerald.gba" download> <!-- Download "pokemonemerald.gba" when clicked -->
+                    <img src="pokemonemerlad.png" alt="Pokemon Emerald">
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="retrogames/Binaries/pokemonruby.gba" download> <!-- Download "pokemonruby.gba" when clicked -->
+                    <img src="pokemon ruby.png" alt="Pokemon Ruby">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3>Download the files only once, then use the save button in the emulator to save progress anywhere.</h3>
     </div>
 </body>
 </html>
