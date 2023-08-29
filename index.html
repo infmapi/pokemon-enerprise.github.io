@@ -20,17 +20,18 @@
 
         .image-container {
             position: relative;
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
             margin: 20px;
         }
 
         .image-container img {
-            width: 100%;
-            height: 100%;
+            width: 100px; /* Set fixed width */
+            height: 100px; /* Set fixed height */
             object-fit: cover;
             transition: box-shadow 0.3s, filter 0.3s, border 0.3s; /* Added transition for the border */
         }
+        
 
         .image-container:hover img {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -64,16 +65,31 @@
     </style>
 </head>
 <body>
-    <h1 class="fancy-title">Your Fancy Title</h1>
+    <div>
+    <h1 class="fancy-title">Pokemon</h1>
+</div>
+    <div>
+    <h3>Dowload the files by clicking on the image and inserting it in the emulator</h3>
+</div>
+    <div>
     <div class="image-container">
-        <a href="retrogames/launcher.html#pokemonemerald" target="_blank"> <!-- Open "pokemonemerald.gba" in a new tab -->
+        <a href="retrogames\Binaries/pokemonemerald.gba" download> <!-- Download "pokemonemerald.gba" when clicked -->
             <img src="pokemonemerlad.png" alt="Pokemon Emerald">
         </a>
     </div>
     <div class="image-container">
-        <a href="retrogames/launcher.html#pokemonruby" target="_blank"> <!-- Open "pokemonemerald.gba" in a new tab -->
+        <a href="retrogames\Binaries/pokemonruby.gba" download> <!-- Download "pokemonruby.gba" when clicked -->
             <img src="pokemon ruby.png" alt="Pokemon Ruby">
         </a>
+    </div>
+    </div>
+    <div class="image-container">
+        <a href="artclass/emulator.html" > 
+            <img src="emulator.jpg" alt="Pokemon Ruby">
+        </a>
+    </div>
+    <div>
+        <h3>Dowload the files only once then use the save button in the emulator to save progress anywhere</h3>
     </div>
 </body>
 </html>
